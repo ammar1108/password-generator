@@ -1,16 +1,72 @@
-# React + Vite
+# Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Password Generator built with React.js and Tailwind CSS.
 
-Currently, two official plugins are available:
+This project generates random passwords based on user-selected options such as password length, numbers, and special characters. It also includes a one-click copy feature and a clean neumorphic user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Generate random passwords instantly
+- Adjustable password length
+- Toggle numbers on/off
+- Toggle special characters on/off
+- One-click copy to clipboard
+- Neumorphic UI design
+- Responsive layout
+- Automatic password regeneration when options change
+- Interactive password-length slider
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- Vite
+- React Hooks
+  - useState
+  - useEffect
+  - useCallback
+  - useRef
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## React Concepts Practiced
+
+This project helped me practice several important React concepts.
+
+### useState
+
+Used for managing:
+
+- Password length
+- Number selection
+- Special character selection
+- Generated password
+
+### useCallback
+
+Used for the password generation and clipboard functions.
+
+### useEffect
+
+Used to automatically generate a new password whenever the selected options change.
+
+### useRef
+
+Used to access the password input when copying the generated password.
+
+## Project Structure
+
+```text
+password-generator/
+│
+├── public/
+│
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
